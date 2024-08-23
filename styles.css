@@ -1,0 +1,119 @@
+/* การตั้งค่าอื่น ๆ ของเว็บไซต์ */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.header {
+    background-color: #fff;
+    color: #000;
+    padding: 10px; /* เพิ่ม padding */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    display: flex; /* ใช้ flexbox เพื่อจัดตำแหน่ง */
+    align-items: center; /* จัดแนวแนวตั้ง */
+    justify-content: center; /* จัดตำแหน่งกลาง */
+}
+
+.header input[type="text"] {
+    width: 100%; /* ใช้ความกว้างเต็ม */
+    max-width: 600px; /* ความกว้างสูงสุดที่ 600px หรือขนาดที่เหมาะสม */
+    padding: 15px; /* เพิ่ม padding */
+    border: 1px solid #ccc; /* กำหนดกรอบสีเทาอ่อน */
+    border-radius: 25px; /* ขอบมน */
+    box-sizing: border-box; /* รวม padding และ border ในความกว้าง */
+    font-size: 1rem; /* ขนาดตัวอักษร */
+    color: #333; /* สีของตัวอักษร */
+    background-color: #fff; /* สีพื้นหลังขาว */
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 999;
+}
+
+.content {
+    margin-top: 60px;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.novel-grid {
+    display: grid; /* ใช้ CSS Grid */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* กำหนดคอลัมน์ที่ยืดหยุ่น */
+    gap: 20px; /* ระยะห่างระหว่างรูปภาพ */
+}
+
+.novel-item {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.novel-item img {
+    width: 100%;
+    aspect-ratio: 14.85 / 21;
+    object-fit: cover;
+    border-bottom: 1px solid #ccc;
+    transition: transform 0.3s ease;
+}
+
+.novel-item img.small {
+    width: 100px; /* ขนาดปกที่เล็ก */
+    height: auto;
+    aspect-ratio: auto; /* ใช้ขนาดที่เล็กกว่า */
+}
+
+.novel-item img:hover {
+    transform: scale(1.05);
+}
+
+.novel-item p {
+    margin: 10px;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.novel-item a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
